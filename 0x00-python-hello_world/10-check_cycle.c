@@ -10,19 +10,23 @@
 int check_cycle(listint_t *list)
 
 {
-listint_t *batia = list;
-listint_t *sarii = list;
+listint_t *fast, *slow;
 
-if (!list)
-return (0);
+if (!list || !list->next)
+	return (0);
 
-while (batia && sarii && sarii->next)
+fast = list;
+slow = list;
+
+while (slow != NULL && fast != NULL && fast->next != NULL)
 {
-batia = batia->next;
-sarii = sarii->next->next;
-if (batia == sarii)
+slow = slow->next;
+fast = fast->next->next;
+if (slow == fast)
+{
 return (1);
 }
 
 return (0);
+}
 }
