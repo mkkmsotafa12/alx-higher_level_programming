@@ -1,30 +1,28 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
-    from calculator_1 import add, sub, mul, div
-    
-    # check the number of arguments
-    if len(sys.argv) != 4:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        sys.exit(1)
+from calculator_1 import add, sub, mul, div
 
-    # extract the arguments
-    a = int(sys.argv[1])
-    operator = sys.argv[2]
-    b = int(sys.argv[3])
 
-    # preform the operator
-    if operator == '+':
-        result = add(a, b)
-    elif operator == '-':
-        result = sub(a, b)
-    elif operator == '*':
-        result = mul(a, b)
-    elif operator == '/':
-        result = div(a, b)
+def calcTheArgu(argv):
+    n = len(argv) - 1
+    if n != 3:
+        print("Usage: ./100-my_calculator.py <a> <mathOperator> <b>")
+        exit(1)
+    a = int(argv[1])
+    mathOp = argv[2]
+    b = int(argv[3])
+    if mathOp == '+':
+        print("{:d} {:s} {:d} = {:d}".format(a, mathOp, b, add(a, b)))
+    elif mathOp == '-':
+        print("{:d} {:s} {:d} = {:d}".format(a, mathOp, b, sub(a, b)))
+    elif mathOp == '*':
+        print("{:d} {:s} {:d} = {:d}".format(a, mathOp, b, mul(a, b)))
+    elif mathOp == '/':
+        print("{:d} {:s} {:d} = {:d}".format(a, mathOp, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
+        exit(1)
 
-        # Print the result
-        print(f"{a} {operator} {b} = {result}")
+
+if __name__ == "__main__":
+    import sys
+    calcTheArgu(sys.argv)
