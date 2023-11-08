@@ -4,7 +4,7 @@ def square_matrix_simple(matrix=[]):
         return None
     new_matrix = []
     for each in matrix:
-        new_matrix += ([x ** 2 for x in each])
+        new_matrix.append([x ** 2 for x in each])
         return new_matrix
 
 
