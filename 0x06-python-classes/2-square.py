@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" this is writing a class"""
+
+
 class Square:
     """this is a class defined for square"""
     def __init__(self, size=0):
@@ -7,4 +10,4 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__size = __size
+            self.__size = size
