@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""writing an empty class"""
-
+"""define a class Square"""
 
 class Square:
     """this is a class defined for square"""
@@ -20,7 +19,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
+        if type(self, value) != int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
@@ -29,3 +28,11 @@ class Square:
 
     def area(self):
         return (self.__size * self.__size)
+
+    def my_print(self):
+        if self.__size == 0:
+            print()
+        for i in range (self.__size):
+            for n in range(self.__size):
+                print('#', end="")
+                print()
