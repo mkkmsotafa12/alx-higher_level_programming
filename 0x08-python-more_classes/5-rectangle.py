@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 More Classes and Objects Python
 """
@@ -13,7 +14,7 @@ class Rectangle:
     __height = None
 
     def __init__(self, width=0, height=0):
-        """__init__ 
+        """__init__
             height : the height of rectangle
         """
         self.__width = width
@@ -23,7 +24,6 @@ class Rectangle:
     def width(self):
         """"width of the getter"""
         return self.__width
-
 
     @width.setter
     def width(self, value):

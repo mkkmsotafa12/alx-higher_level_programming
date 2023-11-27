@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 More Classes and Objects
 """
@@ -22,7 +23,6 @@ class Rectangle:
     def width(self):
         """"width of the getter"""
         return self.__width
-
 
     @width.setter
     def width(self, value):

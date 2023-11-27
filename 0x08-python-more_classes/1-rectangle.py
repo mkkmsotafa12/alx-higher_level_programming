@@ -1,16 +1,18 @@
 #!/usr/bin/python3
+
+
 """
-more classes and objects
+    more classes and objects
 """
+
 
 class Rectangle:
+
+    """
+        def __init__(self, width=0, height=0):
     """
 
     def __init__(self, width=0, height=0):
-
-    """
-    def __init__(self, width=0, height=0):
-
         """
         width : the width of rectangle
         height : the height of rectangle
@@ -18,12 +20,10 @@ class Rectangle:
         self.width = width
         self.height = height
 
-
     @property
     def width(self):
         """width """
         return self.__width
-
 
     @width.setter
     def width(self, value):
