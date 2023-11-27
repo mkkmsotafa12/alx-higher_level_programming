@@ -12,7 +12,7 @@ class Rectangle:
     __width = None
     __height = None
     number_of_instances = 0
-    print_sym = "#"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """__init__
@@ -73,7 +73,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         str__ = ""
-        return '\n'.join([str(self.prit_sym) * self.__width] *
+        return '\n'.join([str(self.print_symbol) * self.__width] *
                          self.__height)
 
     def __del__(self):
