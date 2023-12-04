@@ -9,5 +9,5 @@ class My_list:
 
     def print_sorted(self):
         """Public instance method"""
-        list_sorted = sorted(self)
-        print(list_sorted)
+        sorted_list = sorted(self)
+        print(sorted_list)
