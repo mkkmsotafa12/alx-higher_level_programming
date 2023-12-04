@@ -4,7 +4,7 @@ class MyList that inherits from list
 """
 
 
-class My_list:
+class MyList(list):
     """the class of my_list inherits from list"""
 
     def print_sorted(self):
