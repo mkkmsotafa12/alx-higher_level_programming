@@ -1,4 +1,8 @@
-Project Description
+0x0D. SQL - Introduction
+Task for Alx,
+
+
+
 Python sql introduction tasks
 
 Technology Used
