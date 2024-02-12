@@ -13,3 +13,4 @@ for (let i = 0; i < size; i++)
 // Loop through rows based on the "size"
 console.log("X".repeat(size))
 // print all output
+}
